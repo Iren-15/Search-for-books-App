@@ -1,0 +1,130 @@
+body {
+    background-image: url(photo.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+h1, h2, .txt {
+    font-family: 'Roboto Slab', serif;
+    color:#594545;
+    -webkit-text-stroke:  0.5px rgba(.25, 225, 225, 0.6);
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 35px;
+    margin: 0px;
+}
+
+.txt {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.input-box {
+    width: 70vh;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 3px;
+}
+
+.catalog {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.book {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icon {
+    flex:0.1;
+    display: none;
+}
+
+.writer {
+    flex:2;
+    display: none;
+}
+
+.name {
+    flex:3;
+    color: #078515;
+    display: none;
+}
+
+.link {
+    flex: 0.5;
+    color:#525E75;
+    display:none;
+}
+
+.txt-book {
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+    width: 100vh;
+    border: 1px solid #fff;
+    padding: 10px;
+    margin: 5px 0 0 0;
+    background-color: #D0B8A8;
+    border-radius: 3px;
+}
+
+@media all and (max-width: 800px) {
+    h1 {
+        font-size: 35px;
+    }
+    
+    h2 {
+        font-size: 25px;
+    }
+
+    .txt, .input-box, .txt-book {
+        font-size: 22px;
+    }
+
+    .input-box, .txt-book {
+        width: 500px;
+        }
+
+    .book {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media all and (max-width: 500px) {
+    h1 {
+        font-size: 23px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .txt, .input-box, .txt-book {
+        font-size: 17px;
+    }
+
+    .txt-book, .input-box {
+        width: 300px;
+    }
+}
+
+
